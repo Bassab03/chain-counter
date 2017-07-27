@@ -1,7 +1,7 @@
 var best = 70;
 var none = 0;
 var max = Number.MAX_SAFE_INTEGER
-var min = Number.MIN_SAFE_INTEGER
+var min = 0 // Number.MIN_SAFE_INTEGER
 
 function clickPlus() {
   incrementCounterValueBy(1)
@@ -24,6 +24,9 @@ function incrementCounterValueBy(amount) {
     return
   }
   getCounterElement().innerText = currentValue + amount
+  if (currentValue > 255) {
+    currentValue = 0
+  }
 }
 
 function getCounterElement() {
@@ -44,9 +47,6 @@ function displayMessage(msg) {
 
 function updateMessage() {
   var counterValue = getCounterValue()
-  if (counterValue > 255 || counterValue < 0) {
-    counterValue = 0
-  }
   var msg = getMessageFor(counterValue)
   displayMessage(msg)
 }
