@@ -10,3 +10,6 @@ A tool for counting SOS chains on Pokemon
 
 ## Third party credits
 - [Pokesprite](https://github.com/msikma/pokesprite)
+
+## Forked from GiacomoLaw's chain-counter.github.io
+- Originally made by GiacomoLaw
