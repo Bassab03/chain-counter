@@ -55,7 +55,7 @@ function updateMessage() {
 function getMessageFor(counterValue) {
   if (counterValue === max || counterValue === min) {
     return "LIMIT reached!"
-  } else if (counterValue >== best) {
+  } else if (counterValue >= best) {
     return "4 perfect IVs, 15% HA chance, 1/1024 shiny chance"
   } else if (counterValue < none) {
     return "No guaranteed IVs, 0% HA Chance, 1/4096 shiny chance"
