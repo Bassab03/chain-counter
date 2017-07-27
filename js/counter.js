@@ -44,7 +44,7 @@ function displayMessage(msg) {
 
 function updateMessage() {
   var counterValue = getCounterValue()
-  if (counterValue > 255) {
+  if (counterValue > 255 || counterValue < 0) {
     counterValue = 0
   }
   var msg = getMessageFor(counterValue)
@@ -58,7 +58,7 @@ function getMessageFor(counterValue) {
     return "4 perfect IVs, 15% HA chance, 1/1024 shiny chance"
   } else if (counterValue < none) {
     return "No guaranteed IVs, 0% HA Chance, 1/4096 shiny chance"
-  } else if (counterValue >== 0 && counterValue < 5) {
+  } else if (counterValue >= 0 && counterValue < 5) {
     return "No guaranteed IVs, 0% HA Chance, 1/4096 shiny chance"
   } else if (counterValue > 4 && counterValue < 10) {
     return "1 guaranteed IV, 0% HA Chance, 1/4096 shiny chance"
