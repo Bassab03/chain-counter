@@ -15,7 +15,7 @@ function clickMinus() {
 }
 
 function clickReset() {
-  counterValue = 0
+  getCounterElement().innerText = 0
 }
 
 function incrementCounterValueBy(amount) {
@@ -23,10 +23,11 @@ function incrementCounterValueBy(amount) {
   if (currentValue === max || currentValue === min) {
     return
   }
-  getCounterElement().innerText = currentValue + amount
+  currentValue += amount
   if (currentValue > 255) {
     currentValue = 0
   }
+  getCounterElement().innerText = currentValue
 }
 
 function getCounterElement() {
