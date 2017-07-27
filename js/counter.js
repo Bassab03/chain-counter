@@ -11,6 +11,7 @@ function clickPlus() {
 function clickMinus() {
   var currentValue
   incrementCounterValueBy(-1)
+  updateMessage()
 }
 
 function incrementCounterValueBy(amount) {
