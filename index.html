@@ -31,9 +31,7 @@
     <p style="font-size:30px;">Chain no: <a id="counterValue">0</a></p>
 <div id="messageBox">No guaranteed IVs, 0% HA Chance, low shiny chance</div>
       <br>
-    <form action="https://chain-counter.github.io/">
-      <button class="reset-button" type="submit">Reset</button>
-    </form>
+    <button class="reset-button" type="button" onclick='clickReset()'>Reset</button>
       <br>
       <div id="outer">
           <div class="inner">
@@ -42,9 +40,7 @@
     </form>
           </div>
           <div class="inner">
-      <form action="https://chain-counter.github.io/night-mode/night.html">
-      <button type="submit">Night mode</button>
-    </form>
+    <button id="toggle-button" type="button" onclick='toggleMode()'>Night mode</button>
           </div>
           <div class="inner">
       <form action="https://chain-counter.github.io/donate.html" target="_blank">
