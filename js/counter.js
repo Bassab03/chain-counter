@@ -23,7 +23,7 @@ function incrementCounterValueBy(amount) {
   if (currentValue === max || currentValue === min) {
     return;
   }
-  currentValue += amount;
+  currentValue = currentValue + amount;
   if (currentValue > 255 || currentValue < 0) {
     currentValue = 0;
   }
