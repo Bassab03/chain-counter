@@ -19,15 +19,15 @@ function clickReset() {
 }
 
 function incrementCounterValueBy(amount) {
-  var currentValue = getCounterValue()
+  var currentValue = getCounterValue();
   if (currentValue === max || currentValue === min) {
-    return
+    return;
   }
-  currentValue += amount
+  currentValue += amount;
   if (currentValue > 255 || currentValue < 0) {
-    currentValue = 0
+    currentValue = 0;
   }
-  getCounterElement().innerText = currentValue
+  getCounterElement().innerText = currentValue;
 }
 
 function getCounterElement() {
