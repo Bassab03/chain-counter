@@ -61,9 +61,9 @@ function getMessageFor(counterValue) {
   } else if (counterValue < none) {
     return "No guaranteed IVs, 0% HA Chance\n1/4096 shiny chance"
   } else if (counterValue >= 0 && counterValue < 5) {
-    return "No guaranteed IVs, 0% HA Chance, 1/4096 shiny chance"
+    return "No guaranteed IVs, 0% HA Chance\n1/4096 shiny chance"
   } else if (counterValue > 4 && counterValue < 10) {
-    return "1 guaranteed IV, 0% HA Chance, 1/4096 shiny chance"
+    return "1 guaranteed IV, 0% HA Chance\n1/4096 shiny chance"
   } else if (counterValue > 9 && counterValue < 20) {
     return "2 guaranteed IVs, 5% HA Chance, 1/4096 shiny chance"
   } else if (counterValue > 19 && counterValue < 30) {
