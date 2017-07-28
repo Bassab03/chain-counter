@@ -6,11 +6,12 @@ var min = Number.MIN_SAFE_INTEGER
 document.addEventListener('keyup', doc_keyUp, false);
 
 function doc_keyUp(e) {
-  console.log("keyUp of zoiets")
   if (e.keyCode == 32) {
     clickPlus()
   } else if (e.keyCode == 8) {
     clickMinus()
+  } else if (e.keyCode == 27) {
+    clickReset()
   }
 }
 
