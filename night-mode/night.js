@@ -3,8 +3,6 @@ function toggleMode() {
   var bodyElement = document.querySelector('body')
   if (toggleButton.innerText == "Night mode") {
     toggleButton.innerText = "Day mode"
-    //document.body.style.backgroundColor = "#000000"
-    //bodyElement.setAttribute(class, "night center-night")
     bodyElement.style.backgroundColor = "#000d1a"
     bodyElement.style.color = "white"
   } else {
