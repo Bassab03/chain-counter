@@ -6,8 +6,10 @@ function toggleMode() {
     //document.body.style.backgroundColor = "#000000"
     //bodyElement.setAttribute(class, "night center-night")
     bodyElement.style.backgroundColor = "#000d1a"
+    bodyElement.style.color = "white"
   } else {
     toggleButton.innerText = "Night mode"
     bodyElement.style.backgroundColor = "#FFFFFF"
+    bodyElement.style.color = "black"
   }
 }
