@@ -43,7 +43,7 @@ function getCounterValue() {
 function displayMessage(msg) {
   var messageBox = document.querySelector('#messageBox')
   if(messageBox.innerText !== msg) {
-    messageBox.innerText = msg
+    messageBox.innerHTML = msg
   }  
 }
 
