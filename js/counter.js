@@ -16,6 +16,7 @@ function clickMinus() {
 
 function clickReset() {
   getCounterElement().innerText = 0
+  updateMessage()
 }
 
 function incrementCounterValueBy(amount) {
