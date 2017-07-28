@@ -3,6 +3,15 @@ var none = 0;
 var max = Number.MAX_SAFE_INTEGER
 var min = Number.MIN_SAFE_INTEGER
 
+document.addEventListener('keyup', doc_keyUp, false);
+
+function doc_keyUp(e) {
+  if (e.keyCode == 32)
+    clickPlus()
+  if (e.keyCode == 8)
+    clickMinus()
+}
+
 function clickPlus() {
   incrementCounterValueBy(1)
   updateMessage()
