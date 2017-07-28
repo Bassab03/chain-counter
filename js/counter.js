@@ -57,20 +57,20 @@ function getMessageFor(counterValue) {
   if (counterValue === max || counterValue === min) {
     return "LIMIT reached!"
   } else if (counterValue >= best) {
-    return "4 guaranteed IVs, 15% HA chance\n1/1024 shiny chance"
+    return "4 guaranteed IVs, 15% HA chance<br>1/1024 shiny chance"
   } else if (counterValue < none) {
-    return "No guaranteed IVs, 0% HA Chance\n1/4096 shiny chance"
+    return "No guaranteed IVs, 0% HA Chance<br>1/4096 shiny chance"
   } else if (counterValue >= 0 && counterValue < 5) {
-    return "No guaranteed IVs, 0% HA Chance\n1/4096 shiny chance"
+    return "No guaranteed IVs, 0% HA Chance<br>1/4096 shiny chance"
   } else if (counterValue > 4 && counterValue < 10) {
-    return "1 guaranteed IV, 0% HA Chance\n1/4096 shiny chance"
+    return "1 guaranteed IV, 0% HA Chance<br>1/4096 shiny chance"
   } else if (counterValue > 9 && counterValue < 20) {
-    return "2 guaranteed IVs, 5% HA Chance, 1/4096 shiny chance"
+    return "2 guaranteed IVs, 5% HA Chance<br>1/4096 shiny chance"
   } else if (counterValue > 19 && counterValue < 30) {
-    return "3 guaranteed IVs, 10% HA Chance, 1/4096 shiny chance"
+    return "3 guaranteed IVs, 10% HA Chance<br>1/4096 shiny chance"
   } else if (counterValue > 29 && counterValue < best) {
-    return "4 guaranteed IVs, 15% HA Chance, 1/4096 shiny chance"
+    return "4 guaranteed IVs, 15% HA Chance<br>1/4096 shiny chance"
   } else if (counterValue === 255) {
-    return "4 guaranteed IVs, 15% HA Chance, 1/1024 shiny chance\nYour chain will reset to 0 when the next ally is summoned"
+    return "4 guaranteed IVs, 15% HA Chance, 1/1024 shiny chance<br>Your chain will reset to 0 when the next ally is summoned"
   }
 }
