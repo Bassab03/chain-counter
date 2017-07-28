@@ -6,10 +6,11 @@ var min = Number.MIN_SAFE_INTEGER
 document.addEventListener('keyup', doc_keyUp, false);
 
 function doc_keyUp(e) {
-  if (e.keyCode == 32)
+  if (e.keyCode == 32) {
     clickPlus()
-  if (e.keyCode == 8)
+  } else if (e.keyCode == 8) {
     clickMinus()
+  }
 }
 
 function clickPlus() {
