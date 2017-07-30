@@ -4,9 +4,9 @@ function toggleMode() {
   var donateButton = document.querySelector('#donate-button')
   var bodyElement = document.querySelector('body')
   if (toggleButton.innerText == "Night mode") {
-    moreButton.setAttribute(action, "https://chain-counter.github.io/night-more.html")
+    moreButton.setAttribute(action, "https://chain-counter.github.io/night-mode/night-more.html")
     toggleButton.innerText = "Day mode"
-    donateButton.setAttribute(action, "https://chain-counter.github.io/night-donate.html")
+    donateButton.setAttribute(action, "https://chain-counter.github.io/night-mode/night-donate.html")
     bodyElement.style.backgroundColor = "#000d1a"
     bodyElement.style.color = "white"
   } else {
