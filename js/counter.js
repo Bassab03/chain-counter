@@ -6,9 +6,9 @@ var min = Number.MIN_SAFE_INTEGER
 document.addEventListener('keyup', doc_keyUp, false);
 
 function doc_keyUp(e) {
-  if (e.keyCode == 32 || e.keyCode == 39) {
+  if (e.keyCode == 32 || e.keyCode == 38 || e.keyCode == 39) {
     clickPlus()
-  } else if (e.keyCode == 8 || e.keyCode == 37) {
+  } else if (e.keyCode == 8 || e.keyCode == 37 || e.keyCode == 40) {
     clickMinus()
   } else if (e.keyCode == 27) {
     clickReset()
